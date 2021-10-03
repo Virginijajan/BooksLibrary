@@ -1,0 +1,29 @@
+﻿@page
+@model BooksLibrary.Pages.ReturnModel
+@{
+    ViewData["Title"] = "Return the book";
+}
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    <div class="text-left container">
+        <form asp-page="Return">
+            <div class="form-group">
+                <label class="form-label" asp-for="UserName"></label>
+                <input class="form-control" asp-for="UserName" />
+                <span class="text-danger" asp-validation-for="UserName"></span>
+            </div>
+            <button type="submit" class="btn btn-primary p-1">Submit</button>
+            @if (Model.UserName != null && Model.user != null)
+            {
+                <div class="form-group">
+                    <label class="form-label" asp-for="Book"></label>
+                    <select class="form-control" asp-for="Book" asp-items=Model.Items>
+                    </select>
+                    <span class="text-danger" asp-validation-for="Book"></span>
+                </div>
+                <button type="submit" class="btn btn-primary p-1">Return</button>
+            }
+            <p class="text-success">@Model.Msg</p>
+        </form>
+    </div>
+</div>

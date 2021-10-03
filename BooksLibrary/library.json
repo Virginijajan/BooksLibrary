@@ -1,0 +1,106 @@
+{
+  "Books": [
+    {
+      "Id": 0,
+      "Name": "Name1",
+      "Author": "Author1",
+      "Category": 0,
+      "Language": 0,
+      "PublicationDate": "2021-09-03T00:00:00",
+      "ISBN": "2222222222222",
+      "IsAvailable": false,
+      "DateBookIsTaken": "2021-10-03T16:21:29.80266+01:00"
+    },
+    {
+      "Id": 0,
+      "Name": "Name2",
+      "Author": "Author2",
+      "Category": 2,
+      "Language": 5,
+      "PublicationDate": "2021-09-03T00:00:00",
+      "ISBN": "2222222122222",
+      "IsAvailable": false,
+      "DateBookIsTaken": "2021-10-03T16:21:40.986888+01:00"
+    },
+    {
+      "Id": 0,
+      "Name": "Name3",
+      "Author": "Author3",
+      "Category": 5,
+      "Language": 3,
+      "PublicationDate": "2021-09-03T00:00:00",
+      "ISBN": "2222222122222",
+      "IsAvailable": true,
+      "DateBookIsTaken": "2021-10-03T14:58:11.532398+01:00"
+    },
+    {
+      "Id": 0,
+      "Name": "Name4",
+      "Author": "Author4",
+      "Category": 0,
+      "Language": 0,
+      "PublicationDate": "2021-10-11T00:00:00",
+      "ISBN": "1111111111111",
+      "IsAvailable": true,
+      "DateBookIsTaken": "2021-10-03T15:00:38.9473776+01:00"
+    },
+    {
+      "Id": 0,
+      "Name": "Name6",
+      "Author": "Author6",
+      "Category": 3,
+      "Language": 5,
+      "PublicationDate": "2021-10-03T00:00:00",
+      "ISBN": "1111111111111",
+      "IsAvailable": true,
+      "DateBookIsTaken": "2021-10-03T15:00:48.0370544+01:00"
+    },
+    {
+      "Id": 0,
+      "Name": "Name10",
+      "Author": "Author10",
+      "Category": 5,
+      "Language": 1,
+      "PublicationDate": "2002-06-05T00:00:00",
+      "ISBN": "2222222222222",
+      "IsAvailable": true,
+      "DateBookIsTaken": "2021-10-03T15:08:50.6573336+01:00"
+    }
+  ],
+  "Users": [
+    {
+      "Name": "User1",
+      "Books": [
+        {
+          "Id": 0,
+          "Name": "Name2",
+          "Author": "Author2",
+          "Category": 2,
+          "Language": 5,
+          "PublicationDate": "2021-09-03T00:00:00",
+          "ISBN": "2222222122222",
+          "IsAvailable": false,
+          "DateBookIsTaken": "2021-10-03T16:21:40.986888+01:00"
+        }
+      ],
+      "Message": "User1 have borrowed the book Name2."
+    },
+    {
+      "Name": "User",
+      "Books": [
+        {
+          "Id": 0,
+          "Name": "Name1",
+          "Author": "Author1",
+          "Category": 0,
+          "Language": 0,
+          "PublicationDate": "2021-09-03T00:00:00",
+          "ISBN": "2222222222222",
+          "IsAvailable": false,
+          "DateBookIsTaken": "2021-10-03T16:21:29.80266+01:00"
+        }
+      ],
+      "Message": "User have borrowed the book Name1."
+    }
+  ]
+}

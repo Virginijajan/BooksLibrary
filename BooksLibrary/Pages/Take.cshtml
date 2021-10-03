@@ -1,0 +1,26 @@
+﻿@page 
+@model BooksLibrary.Pages.TakeModel
+
+@{
+    ViewData["Title"] = "Take the book";
+}
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    
+    <div class="container p-3">
+        <form asp-page="Take">
+            <div class="form-group">
+                <label class="form-label" asp-for="UserName"></label>
+                <input class="form-control" asp-for="UserName" />
+                <span class="text-danger" asp-validation-for="UserName"></span>
+            </div>
+            <div class="form-group">
+                <label class="form-label" asp-for="BookToTake"></label>
+                <input class="form-control" asp-for="BookToTake" />
+                <span class="text-danger" asp-validation-for="BookToTake"></span>
+            </div>
+            <button type="submit" class="btn btn-primary p-1">Take</button>
+        </form>
+        <p class="text-danger">@Model.Msg</p>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Library";
+}
+
+
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Add a new book</p>
+        <a href="/add" class="col-4 btn btn-primary">ADD</a>
+    </div>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Books list</p>
+        <a href="/list" class="col-4 btn btn-primary">LIST</a>
+    </div>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Users list</p>
+        <a href="/user" class=" col-4 btn btn-primary">USERS</a>
+    </div>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Return the book</p>
+        <a href="/return" class=" col-4 btn btn-primary">RETURN</a>
+    </div>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Take the book</p>
+        <a href="/list" class=" col-4 btn btn-primary">TAKE</a>
+    </div>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Delete the book</p>
+        <a href="/list" class=" col-4 btn btn-primary">DELETE</a>
+    </div>
+    <div class="row justify-content-start p-1">
+        <p class="col-4">Find the book</p>
+        <a href="/filter" class=" col-4 btn btn-primary">FIND</a>
+    </div>
+</div>

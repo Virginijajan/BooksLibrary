@@ -1,0 +1,53 @@
+﻿@page 
+@model BooksLibrary.Pages.ListModel
+@{
+    ViewData["Title"] = "Books in the library list";
+}
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    
+    <div class="container p-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Language</th>
+                    <th scope="col">Publication date</th>
+                    <th scope="col">ISBN</th>
+                    <th scope="col">Is available</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.books.Count(); i++)
+                {
+                <tr>
+                    <th scope="row">@(i+1)</th>
+                    <td>@Model.books[i].Name</td>
+                    <td>@Model.books[i].Author</td>
+                    <td>@Model.books[i].Category</td>
+                    <td>@Model.books[i].Language</td>
+                    <td>@Model.books[i].PublicationDate</td>
+                    <td>@Model.books[i].ISBN</td>
+                    <td>@Model.books[i].IsAvailable</td>
+                    <td>
+                        <form asp-page="list">
+                            <button type="submit" name="BookToDelete" class="btn btn-dark" value="@Model.books[i].Name">Delete</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-page="take">
+                            <button type="submit" name="BookToTake" class="btn btn-primary" value="@Model.books[i].Name">Take</button>
+                        </form>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <p class="text-success">@Model.Msg</p>
+    </div>
+</div>

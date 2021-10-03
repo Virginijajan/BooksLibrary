@@ -1,0 +1,45 @@
+﻿@page
+@model BooksLibrary.Pages.FilterModel
+@{
+    ViewData["Title"] = "Find the book";
+}
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    <div class="text-left container">
+        <form asp-page="filter">
+            <div class="form-group">
+                <label class="form-label" asp-for="Filter"></label>
+                <select class="form-control" asp-for="Filter" asp-items="Html.GetEnumSelectList<FilterBy>()">
+                </select>
+                <span class="text-danger" asp-validation-for="Filter"></span>
+            </div>
+            @if (Model.Filter == FilterBy.Category)
+            {
+                <div class="form-group">
+                    <label class="form-label" asp-for="Category"></label>
+                    <select class="form-control" asp-for="Category" asp-items="Html.GetEnumSelectList<Categories>()">
+                    </select>
+                    <span class="text-danger" asp-validation-for="Category"></span>
+                </div>
+            }
+            else if (Model.Filter == FilterBy.Language)
+            {
+                <div class="form-group">
+                    <label class="form-label" asp-for="Language"></label>
+                    <select class="form-control" asp-for="Language" asp-items="Html.GetEnumSelectList<Languages>()">
+                    </select>
+                    <span class="text-danger" asp-validation-for="Language"></span>
+                </div>
+            }
+            else if (Model.Filter != FilterBy.All && Model.Filter != FilterBy.Available && Model.Filter != FilterBy.Taken)
+            {
+                <div class="form-group">
+                    <label class="form-label" asp-for="Param"></label>
+                    <input class="form-control" asp-for="Param" />
+                    <span class="text-danger" asp-validation-for="Param"></span>
+                </div>
+            }
+            <button  type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

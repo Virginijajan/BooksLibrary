@@ -1,0 +1,51 @@
+﻿@page
+@model BooksLibrary.Pages.AddModel
+@{
+    ViewData["Title"] = "Add a new book";
+}
+<div class="container">
+    <h4>@ViewData["Title"]</h4>
+    <div class="text-left">       
+        <form asp-page="Add">
+            <div class="form-group">
+                <label class="form-label" asp-for="Input.Name"></label>
+                <input class="form-control" asp-for="Input.Name" />
+                <span class="text-danger" asp-validation-for="Input.Name"></span>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" asp-for="Input.Author"></label>
+                <input class="form-control" asp-for="Input.Author" />
+                <span class="text-danger" asp-validation-for="Input.Author"></span>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" asp-for="Input.Category"></label>
+                <select class="form-control" asp-for="Input.Category" asp-items="Html.GetEnumSelectList<Categories>()">
+                </select>
+                <span class="text-danger" asp-validation-for="Input.Category"></span>
+            </div>
+           
+            <div class="form-group">
+                <label class="form-label" asp-for="Input.Language"></label>
+                <select class="form-control" asp-for="Input.Language" asp-items="Html.GetEnumSelectList<Languages>()"></select>
+                <span class="text-danger" asp-validation-for="Input.Language"></span>
+            </div>
+           
+            <div class="form-group">
+                <label class="form-label" asp-for="Input.PublicationDate"></label>
+                <input class="form-control" asp-for="Input.PublicationDate" />
+                <span class="text-danger" asp-validation-for="Input.PublicationDate"></span>
+            </div>
+           
+            <div class="form-group">
+                <label class="form-label" asp-for="Input.ISBN"></label>
+                <input class="form-control" asp-for="Input.ISBN" />
+                <span class="text-danger" asp-validation-for="Input.ISBN"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <p class="text-success">@Model.Msg</p>
+        </form>       
+    </div>
+</div>
