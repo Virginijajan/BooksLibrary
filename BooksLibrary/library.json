@@ -9,7 +9,7 @@
       "PublicationDate": "2021-09-03T00:00:00",
       "ISBN": "2222222222222",
       "IsAvailable": false,
-      "DateBookIsTaken": "2021-10-03T16:21:29.80266+01:00"
+      "DateBookIsTaken": "2021-10-03T17:21:29.80266+02:00"
     },
     {
       "Id": 0,
@@ -20,7 +20,7 @@
       "PublicationDate": "2021-09-03T00:00:00",
       "ISBN": "2222222122222",
       "IsAvailable": false,
-      "DateBookIsTaken": "2021-10-03T16:21:40.986888+01:00"
+      "DateBookIsTaken": "2021-10-03T17:21:40.986888+02:00"
     },
     {
       "Id": 0,
@@ -31,7 +31,7 @@
       "PublicationDate": "2021-09-03T00:00:00",
       "ISBN": "2222222122222",
       "IsAvailable": true,
-      "DateBookIsTaken": "2021-10-03T14:58:11.532398+01:00"
+      "DateBookIsTaken": "2021-10-03T15:58:11.532398+02:00"
     },
     {
       "Id": 0,
@@ -42,7 +42,7 @@
       "PublicationDate": "2021-10-11T00:00:00",
       "ISBN": "1111111111111",
       "IsAvailable": true,
-      "DateBookIsTaken": "2021-10-03T15:00:38.9473776+01:00"
+      "DateBookIsTaken": "2021-10-03T16:00:38.9473776+02:00"
     },
     {
       "Id": 0,
@@ -53,7 +53,7 @@
       "PublicationDate": "2021-10-03T00:00:00",
       "ISBN": "1111111111111",
       "IsAvailable": true,
-      "DateBookIsTaken": "2021-10-03T15:00:48.0370544+01:00"
+      "DateBookIsTaken": "2021-10-03T16:00:48.0370544+02:00"
     },
     {
       "Id": 0,
@@ -64,7 +64,18 @@
       "PublicationDate": "2002-06-05T00:00:00",
       "ISBN": "2222222222222",
       "IsAvailable": true,
-      "DateBookIsTaken": "2021-10-03T15:08:50.6573336+01:00"
+      "DateBookIsTaken": "2021-10-03T16:08:50.6573336+02:00"
+    },
+    {
+      "Id": 0,
+      "Name": "nnnnn",
+      "Author": "mmmmm",
+      "Category": 0,
+      "Language": 0,
+      "PublicationDate": "2022-01-05T00:00:00",
+      "ISBN": "2222222222222",
+      "IsAvailable": true,
+      "DateBookIsTaken": "2022-01-10T12:01:32.5792298+01:00"
     }
   ],
   "Users": [
@@ -80,7 +91,7 @@
           "PublicationDate": "2021-09-03T00:00:00",
           "ISBN": "2222222122222",
           "IsAvailable": false,
-          "DateBookIsTaken": "2021-10-03T16:21:40.986888+01:00"
+          "DateBookIsTaken": "2021-10-03T17:21:40.986888+02:00"
         }
       ],
       "Message": "User1 have borrowed the book Name2."
@@ -97,10 +108,15 @@
           "PublicationDate": "2021-09-03T00:00:00",
           "ISBN": "2222222222222",
           "IsAvailable": false,
-          "DateBookIsTaken": "2021-10-03T16:21:29.80266+01:00"
+          "DateBookIsTaken": "2021-10-03T17:21:29.80266+02:00"
         }
       ],
       "Message": "User have borrowed the book Name1."
+    },
+    {
+      "Name": "ddddddddddd",
+      "Books": [],
+      "Message": null
     }
   ]
 }
